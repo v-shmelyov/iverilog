@@ -1013,6 +1013,7 @@ static void do_define(void)
     cp = strchr(yytext, '/');
 
     while (cp && *cp) {
+        // TODO: Need to conform to standart here. One-line comment does not break the macro definition but it is not a part of macro as well
         /*if (cp[1] == '/') {
             *cp = 0;
             break;
