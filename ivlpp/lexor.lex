@@ -1013,10 +1013,10 @@ static void do_define(void)
     cp = strchr(yytext, '/');
 
     while (cp && *cp) {
-        if (cp[1] == '/') {
+        /*if (cp[1] == '/') {
             *cp = 0;
             break;
-        }
+        }*/
 
         if (cp[1] == '*') {
             tail = strstr(cp+2, "*/");
